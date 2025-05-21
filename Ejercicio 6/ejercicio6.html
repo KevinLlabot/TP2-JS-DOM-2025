@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ejercicio6.css">
+    <title>Ejercicio 6</title>
+</head>
+<body style="background-color: rgb(90, 89, 89);">
+    <h1>Formulario</h1>
+    <p>Por favor, completa el siguiente formulario:</p>
+
+    <form id="form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        <br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+        <br><br>
+        <label for="altura">Altura:</label>
+        <input type="number" id="altura" name="altura" required>
+        <br><br>
+        <label for="mail">Correo:</label>
+        <input type="email" id="mail" name="mail" required>
+        <br><br>
+        <button type="submit">Enviar</button>
+
+        <p id="resultado"></p>
+    </form>
+    <script src="script6.js"></script>
+</body>
+</html>
