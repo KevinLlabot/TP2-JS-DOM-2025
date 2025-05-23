@@ -24,15 +24,15 @@
             } else if (altura.value <= 0 || altura.value > 230) {
                 resultado.classList.add('rojo');
                 resultado.textContent = 'La altura no puede ser negativa ni cero y debe ser menor a 230 mts.';
-            } else if (!validateEmail(mail.value)) {
+            } else if (!validarEmail(mail.value)) {
                 resultado.classList.add('rojo');
                 resultado.textContent = 'El correo electrónico no es válido.';
             } else {
                 resultado.classList.add('verde');
-                resultado.textContent = 'Formulario con exito.';
+                resultado.textContent = 'Formulario enviado con exito.';
             }
 
-            function validateEmail(email) {
+            function validarEmail(email) {
                 const signos = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 return signos.test(String(email).toLowerCase());
             }
